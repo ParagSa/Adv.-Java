@@ -1,0 +1,15 @@
+package com.parag.comp;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+
+public class MyColl {
+	private String myArr[];
+	private List<String> myList;
+	private Set<String> mySet;
+	private Map<String, String> myMap;
+	private Properties myProps;
+
+}

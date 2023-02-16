@@ -1,0 +1,34 @@
+package com.digirojgar.model;
+
+import java.time.LocalDate;
+
+public class JobOpening {
+	private int workId;// PK, auto increment
+
+	private int userId;// SESSION - employees ID
+	
+	private int employerId; // Employers ID
+	
+	private  String skillsReq; // drop down
+	
+	private String JobDesc;// Job desc
+	
+	private long mobileNumber;// Job desc
+
+	private LocalDate postDate;// post date , now()
+	
+	private LocalDate workDate;// future date .. jis din kam krna hai
+	
+	private double reward;// skip
+	
+	private String jobCity;// location
+	private String JobDist;// 
+	private String JobState;// 
+	
+	private String status; // internal status active and close
+	
+	
+	private List<User> users;
+	
+
+}

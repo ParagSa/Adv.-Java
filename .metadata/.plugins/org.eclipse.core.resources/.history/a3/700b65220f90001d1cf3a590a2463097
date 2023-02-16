@@ -1,0 +1,131 @@
+package com.digirojgar.model;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public class User {
+
+	private int userId;
+
+	private String password;
+	private String fname;
+	private String lname;
+	private long mobileNo;
+	private String email;
+	private LocalDate dateOfBirth;
+	private double age;
+	private LocalDate dateOfJoining;
+
+	private String city;
+	private String district;
+	private String state;
+
+	private String about;
+	private String role;
+	private List<JobOpening> jobOepnings;
+	
+	
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getFname() {
+		return fname;
+	}
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+	public String getLname() {
+		return lname;
+	}
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+	public long getMobileNo() {
+		return mobileNo;
+	}
+	public void setMobileNo(long mobileNo) {
+		this.mobileNo = mobileNo;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public LocalDate getDateOfBirth() {
+		return dateOfBirth;
+	}
+	public void setDateOfBirth(LocalDate dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+	public double getAge() {
+		return age;
+	}
+	public void setAge(double age) {
+		this.age = age;
+	}
+	public LocalDate getDateOfJoining() {
+		return dateOfJoining;
+	}
+	public void setDateOfJoining(LocalDate dateOfJoining) {
+		this.dateOfJoining = dateOfJoining;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getDistrict() {
+		return district;
+	}
+	public void setDistrict(String district) {
+		this.district = district;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getAbout() {
+		return about;
+	}
+	public void setAbout(String about) {
+		this.about = about;
+	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
+	public List<JobOpening> getJobOepnings() {
+		return jobOepnings;
+	}
+	public void setJobOepnings(List<JobOpening> jobOepnings) {
+		this.jobOepnings = jobOepnings;
+	}
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", password=" + password + ", fname=" + fname + ", lname=" + lname
+				+ ", mobileNo=" + mobileNo + ", email=" + email + ", dateOfBirth=" + dateOfBirth + ", age=" + age
+				+ ", dateOfJoining=" + dateOfJoining + ", city=" + city + ", district=" + district + ", state=" + state
+				+ ", about=" + about + ", role=" + role + "]";
+	}
+	
+	
+	
+
+	
+	
+}

@@ -1,0 +1,136 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login form</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body style="background:url(Img/bg.jpeg); background-size:cover; background-attachment: fixed; ">
+<div class="container"style="position: absolute; top: 35%;left: 50%; transform: translate(-50%, -50%);">
+<div class="row">
+<div class="col m6 offset-m3">
+<div class = "card">
+<div class = "card-content center-align">
+
+<h3 style="margin-top: 10px">Login Here!!!!</h3>
+
+<form  action="reg.jsp" method="post">
+
+<input type="text" name="User_Name" placeholder="enter user name" />
+<input type="password" name="User_pass" placeholder="enter password" />
+<div style="text-align: left;"><a href="User_reg_form.jsp">New User?</a></div>
+<button type="submit" class="btn #03a9f4 light-blue">Login</button>
+
+
+</form>
+
+<div class="container" id="login-page">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 offset-lg-4 offset-md-3">
+						<div class="row">
+							<div class="col-6">
+								<h6 id="login-bar" class="lead">Login</h6>
+							</div>
+							<div class="col-6">
+								<h6 id="reg-bar" class="lead">Register</h6>
+							</div>
+						</div>
+						<div class="row flex-nowrap" id="login-page-toggle">
+							<div class="col-12" id="old_user_login">
+
+								<form action="login" method="post">
+
+									<div class="row text-center">
+										<label for="">Log In as</label>
+									</div>
+
+									<input class="form-check-input" type="radio" name="role"
+										value="employer"> <label class="form-check-label">
+										Employer </label> <input class="form-check-input" type="radio"
+										name="role" value="employee"> <label
+										class="form-check-label">Employee </label> <br> <label
+										for="">user ID</label> <input type="text" name="userID"
+										placeholder="User ID" class="form-control" required> <br>
+									<label for="">Password</label> <input type="password"
+										name="password" placeholder="secret key" class="form-control"
+										required>
+									<!-- <span id="forget-pass" disabled=""><a href="forgetPass.html">forgot password?</a></span> -->
+									<span> <input type="checkbox" name="rememberMe"
+										value="yes"> Remember Me 
+									</span><br> <span id="update-pass"><a
+										href="updatePass.html">Forgot Password?</a></span> <br>
+									<div class="row">
+										<div class="col-3 offset-5">
+											<input type="submit" value="login"> <br>
+								</form>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-12" id="reg_new_user">
+						<form action="user-registration" method="post">
+							<div id="register_from">
+								<label for="">First Name</label> <input type="text" name="fname"
+									id="fname" placeholder="Please enter your First Name"
+									class="form-control" required> <label for="">Last
+									Name</label> <input type="text" name="lname" id="lname"
+									placeholder="Please enter your last Name" class="form-control"
+									required> <label for="">Email ID</label> <input
+									type="email" name="emailID" id="emailID" placeholder="email id"
+									class="form-control" required> <label for="">Choose
+									Your Role</label>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="role"
+										value="employer"> <label class="form-check-label">
+										Employer </label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="role"
+										value="employee"> <label class="form-check-label">
+										Employee </label>
+								</div>
+
+								<label for="">Create Password</label> <input type="password"
+									name="password" id="password" placeholder="password"
+									class="form-control" required>
+								<!-- <span id="forget-pass">your password must have at least 8 characters</span> -->
+								<label for="">Confirm Password</label> <input type="password"
+									id="Confirmed_Pass" name="Confirmed_Pass"
+									placeholder="Confirm password" class="form-control" required>
+								<br>
+								<div class="row">
+									<div class="col-3 offset-5">
+										<input type="submit" id="reg_submit" value="signUp"> <br>
+										<br>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+  <script>
+$(document).ready(function() {
+	console.log("page is ready");
+})
+  </script>
+
+
+</body>
+</html>

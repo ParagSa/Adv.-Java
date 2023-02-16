@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#main_emp_home {
+	background: url("../img/search.jpg") no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+#main_empr_home{
+	background: url("../img/post.jpg") no-repeat;
+	background-size: cover;
+	min-height: 100vh;	
+}
+.navbar_emp {
+	position: fixed;
+	min-height: 70px;
+	top:0;
+	background-color: rgb(34, 40, 49,0.1);
+	min-height: 70px;
+	z-index: 100; 
+	box-shadow: 5px 5px 10px #fff;
+}
+
+.navigation_bar_emp {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	margin: 10px;
+	color:#fff;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+/*post job sucess*/
+
+
+.postsuccess .row {
+	min-height: 100vh;
+	align-content: center;
+}
+
+.postsuccess .row .col-md-4 {
+	min-height: 100px;
+	padding: 20px;
+	background-color: rgba(180, 180, 180, 1);
+	color:black;
+	border-radius: 10px;
+     box-shadow: 10px 10px 10px rgb(71, 71, 71);
+}
+
+/* JOB RESULT SUCESS*/
+
+
+.Searchheading {
+	color:#fff;
+	text-shadow: 2px 2px 4px #000000;
+	margin-top: 60px;
+	padding: 10px;
+	font-weight: 400;
+}
+
+.jobdata {
+	border-radius: 15px;
+	background-color: #fff;
+	box-shadow: 5px 10px 8px #888888;
+	margin-bottom: 20px;
+}
+
+.jobtitle {
+	text-align: left;
+	padding: 10px;
+}
+
+.jobdetails {
+	text-align: center;
+	padding: 20px;
+}

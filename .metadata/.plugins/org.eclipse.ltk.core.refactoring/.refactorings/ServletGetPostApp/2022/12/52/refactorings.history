@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;getServlet.java&apos; to &apos;ServletGetPostApp/src/main/java/serv&apos;&#x0D;&#x0A;- Original project: &apos;ServletGetPostApp&apos;&#x0D;&#x0A;- Destination element: &apos;ServletGetPostApp/src/main/java/serv&apos;&#x0D;&#x0A;- Original element: &apos;serv.getServlet.java&apos;" description="Copy compilation unit" destination="/src\/main\/java&lt;serv" element1="/src\/main\/java&lt;serv{getServlet.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1671724394092" units="1" version="1.0"/>
+</session>

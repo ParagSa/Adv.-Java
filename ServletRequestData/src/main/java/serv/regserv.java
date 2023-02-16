@@ -1,0 +1,37 @@
+package serv;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class regserv
+ */
+@WebServlet("/regServlet")
+public class regserv extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String unm = request.getParameter("uname"); 
+		String pas = request.getParameter("pass"); 
+		String gen = request.getParameter("gender"); 
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		out.print("<h2>"+unm+"</h2>");
+		out.print("<h2>"+pas+"</h2>");
+		out.print("<h2>"+gen+"</h2>");
+		
+		out.flush();
+		out.close();
+		
+	}
+
+}

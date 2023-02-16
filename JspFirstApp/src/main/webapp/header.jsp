@@ -1,0 +1,1 @@
+<h1 style="background-color: yellow; text-align: center;">My App</h1>

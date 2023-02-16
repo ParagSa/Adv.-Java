@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;hbm-one2one-app&apos;&#x0D;&#x0A;- Original project: &apos;hbm-one2one-app&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.parag.model.Clerk.java&#x0D;&#x0A;     com.parag.model.Employee.java" description="Delete elements" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.parag.model{Clerk.java" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.parag.model{Employee.java" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1672515085862" subPackages="false" version="1.0"/>
+</session>

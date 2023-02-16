@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Job Portal - You are one step away from getting a job for a day!</title>
+
+<script>
+function check(){
+	let url ="";
+
+	let uname = getCookie('uname');
+	let upass = getCookie('upass');
+	if(uname!="" && upass!=""){
+		
+		document.getElementById("postJob").innerHTML = "<button type='submit' class='btn btn-success mt-5'>Post Job</button>";
+		//document.getElementById("send").click();
+
+		alert("post job triggered");
+	}
+	else{
+		alert("login job triggered");
+
+		url = "login.html";
+	document.getElementById("postJob").innerHTML = "<a href ='"+ url + "' class='btn btn-success mt-5'>Post Job</a>";
+	}
+}
+
+function getCookie(cname) {
+	  let name = cname + "=";
+	  let decodedCookie = decodeURIComponent(document.cookie);
+	  
+	  console.log(decodedCookie , typeof decodedCookie); 
+	  
+	  let ca = decodedCookie.split(';');
+
+	  console.log(ca, typeof ca) // 
+
+	  for(let i = 0; i <ca.length; i++) {
+		  console.log(ca[i]);
+		  let c = ca[i];
+	    while (c.charAt(0) == ' ') {
+	      c = c.substring(1);
+	    }
+	    if (c.indexOf(name) == 0) {
+	      return c.substring(name.length, c.length);
+	    }
+	  }
+	  return "";
+	}
+
+</script>
+
+</head>
+<body onload="check()"><!--  -->
+    <!-- ==================== header ================== -->
+
+      <header id="header">
+      <div class="container search_job_header">
+        <div class="row">
+          <div class="col job_search">
+            <h1 class="display1 mt-5">
+              
+            </h1>
+          </div>
+        </div>
+       <form action="postnewjob" method="post">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="" class="form-label"></label>
+            <input class="form-control" type="text" placeholder="Job Title" name="jobtitle"/>
+          </div>
+          <div class="col-md-3">
+            <label for="" class="form-label"></label>
+            <input class="form-control" type="date" name="workdate"/>
+          </div>
+          <div class="col-md-3">
+            <label for="" class="form-label"></label>
+            <input class="form-control" type="text" name="jobCity" placeholder="location" />
+          </div>
+            <div class="col-md-3">
+            <label for="" class="form-label"></label>
+            <input class="form-control" type="number" pattern="[0-9]{10}" placeholder="Mobile Number" name="mobNumber" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="postJob" class="col-1 m-auto">
+             <!-- <a href="" class="btn btn-success mt-5">Post Job</a>  -->
+
+            </div>
+          </div>
+        </div>
+       </form>
+       </div>
+    </header>
+  
+    <!-- ==================== main ================== -->
+ <div class="main">
+
+ </div>
+ <!-- ========= nav_menu ============ -->
+ <div class="nav_menu navigation" id="nav-menu">
+   <div class="row">
+     <div class="col-md-3 justify-content-space-between">
+          <div class="row title-bar">
+            <div class="col-9">
+              <h2><a class="title" href="index.html">Job for a day!</a></h2>
+            </div>
+            <div class="col-3 d-sm-none" id="menu-icon">
+              <i class="fa fa-list" id="menu_toggle"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <nav class="row">
+            <div class="col-sm-7">
+              <ul class="nav_bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-5">
+              <a href="postjob.html" class="btn bg-primary text-light"
+                >Post a Job</a
+              >
+              <a href="index.html" class="btn bg-success text-light">Search a Job</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+ <!-- ========== Footer ======= -->
+
+    <footer id="footer">
+        <div class="container footer">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h3>About</h3>
+                    <p>We aim to provide job for a day for every individual who is looking out for an Job!</p>
+                    <ul>
+                        <li><a href="#facebook">facebook</a></li>
+                        <li><a href="#Twitter">Twitter</a></li>
+                        <li><a href="#Instagram">Instagram</a></li>
+                        <li><a href="#Yotube">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Employers</h5>
+                    <ul>
+                        <li><a href="">Register</a></li>
+                        <li><a href="">Post a Job</a></li>
+                        <li><a href="">Advance Skill Search</a></li>
+                        <li><a href="">Recruiting Service</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Workers</h5>
+                    <ul>
+                        <li><a href="">Register</a></li>
+                        <li><a href="">Post Your Skills</a></li>
+                        <li><a href="">Job Search</a></li>
+                        <li><a href="">Emploer Search</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Have a question?</h5>
+                    <ul>
+                        <li><a href="">	203, Ramsan Road, BKC Complex, Mumbai, India</a></li>
+                        <li><a href="">+91 02292 3929 210</a></li>
+                        <li><a href="">info@jobportal.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

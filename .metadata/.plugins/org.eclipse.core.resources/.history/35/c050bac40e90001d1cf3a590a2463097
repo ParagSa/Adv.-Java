@@ -1,0 +1,29 @@
+package com.digirojgar.model;
+
+import java.time.LocalDate;
+
+public class User {
+
+	private int userId;
+
+	private String password;
+	
+	private String fname;
+	private String lname;
+	private long mobileNo;
+	private String email;
+	private LocalDate dateOfBirth;
+	private double age;
+	private LocalDate dateOfJoining;
+
+	private String city;
+	private String district;
+	private String state;
+
+	private String about;
+	private String role;
+	private List<JobOpening> jobOepnings;
+
+	
+	
+}

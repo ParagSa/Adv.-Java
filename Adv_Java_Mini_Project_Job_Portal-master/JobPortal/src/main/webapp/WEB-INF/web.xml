@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+
+		<display-name>UserLogin</display-name>
+		<servlet-name>UserLogin</servlet-name>
+		<servlet-class>com.jobportal.controller.UserLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserLogin</servlet-name>
+		<url-pattern>/UserLogin</url-pattern>
+	</servlet-mapping>
+	<display-name>JobPortal</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+
+		<display-name>RegisterUserController</display-name>
+		<servlet-name>RegisterUserController</servlet-name>
+		<servlet-class>com.jobportal.controller.RegisterUserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterUserController</servlet-name>
+		<url-pattern>/RegisterUserController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>LogOutServlet</display-name>
+		<servlet-name>LogOutServlet</servlet-name>
+		<servlet-class>com.jobportal.controller.LogOutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogOutServlet</servlet-name>
+		<url-pattern>/LogOutServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<display-name>ApplyJobServlet</display-name>
+		<servlet-name>ApplyJobServlet</servlet-name>
+		<servlet-class>com.jobportal.controller.ApplyJobServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ApplyJobServlet</servlet-name>
+		<url-pattern>/ApplyJobServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<display-name>AppliedJobServlet</display-name>
+		<servlet-name>AppliedJobServlet</servlet-name>
+		<servlet-class>com.jobportal.controller.AppliedJobServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AppliedJobServlet</servlet-name>
+		<url-pattern>/AppliedJobServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<display-name>ApplicationsReceievedServlet</display-name>
+		<servlet-name>ApplicationsReceievedServlet</servlet-name>
+		<servlet-class>com.jobportal.controller.ApplicationsReceievedServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ApplicationsReceievedServlet</servlet-name>
+		<url-pattern>/ApplicationsReceievedServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<display-name>PostedJobs</display-name>
+		<servlet-name>PostedJobs</servlet-name>
+		<servlet-class>com.jobportal.controller.PostedJobs</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostedJobs</servlet-name>
+		<url-pattern>/PostedJobs</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<display-name>DeletePostedJobServlet</display-name>
+		<servlet-name>DeletePostedJobServlet</servlet-name>
+		<servlet-class>com.jobportal.controller.DeletePostedJobServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeletePostedJobServlet</servlet-name>
+		<url-pattern>/DeletePostedJobServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<display-name>UpdateProfileServlet</display-name>
+		<servlet-name>UpdateProfileServlet</servlet-name>
+		<servlet-class>com.jobportal.controller.UpdateProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateProfileServlet</servlet-name>
+		<url-pattern>/UpdateProfileServlet</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,11 @@
+package com.parag.comp;
+
+import java.util.List;
+import java.util.Set;
+
+public class MyColl {
+	private String myArr[];
+	private List<String> myList;
+	private Set<String> mySet;
+
+}
